@@ -11,14 +11,15 @@ package cadastraempresa;
  */
 public class Funcionario {
     private String nome;
-    private float slr;
+    private double slr;
     private String dtAdmissao;
     private String dep;
 
-    public Funcionario(String nome, float slr, String dtAdmissao) {
+    public Funcionario(String nome, double slr, String dtAdmissao, String dep) {
         this.nome = nome;
         this.slr = slr;
         this.dtAdmissao = dtAdmissao;
+        this.dep = dep;
     }
 
     public String getNome() {
@@ -29,11 +30,11 @@ public class Funcionario {
         this.nome = nome;
     }
 
-    public float getSlr() {
+    public double getSlr() {
         return slr;
     }
 
-    public void setSlr(float slr) {
+    public void setSlr(double slr) {
         this.slr = slr;
     }
 

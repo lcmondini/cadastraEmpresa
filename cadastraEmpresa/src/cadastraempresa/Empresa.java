@@ -51,4 +51,20 @@ public class Empresa {
         return true;
     }
     
+    public ArrayList retornarDepartamento(){
+        ArrayList depto = new ArrayList();
+        
+        for(Funcionario f : funcionario ){
+            f.getDep();
+        }
+        return depto;
+    }
+    
+    public void aplicarAumento(String dep){
+        for(Funcionario f : funcionario ){
+            if (f.getDep() == dep){
+                f.setSlr(f.getSlr() + (f.getSlr() * 0.1));
+            }
+        }
+    }
 }
